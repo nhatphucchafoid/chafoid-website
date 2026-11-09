@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CHAFOID Việt Nam - Công ty TNHH Sản xuất và Xuất nhập khẩu Nhật Phúc. TRAO NIỀM TIN - HƯỚNG ĐẾN TƯƠNG LAI.">
+<title>CHAFOID VIỆT NAM | NHẬT PHÚC</title>
+
+<style>
+:root{
+--green:#155b3c;
+--green2:#238451;
+--yellow:#f5d84d;
+--light:#f1f8f1;
+--dark:#183b2c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+color:#26372e;
+line-height:1.7;
+}
+a{text-decoration:none}
+header{
+background:#fff;
+padding:12px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:12px;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 3px 15px #00000012;
+}
+.logo{
+font-size:32px;
+font-weight:900;
+letter-spacing:3px;
+color:var(--green);
+line-height:1.2;
+}
+.logo small{
+display:block;
+font-size:10px;
+letter-spacing:1px;
+color:#777;
+}
+nav{display:flex;gap:19px;flex-wrap:wrap}
+nav a{
+font-weight:bold;
+font-size:14px;
+color:var(--dark);
+}
+nav a:hover{color:var(--green2)}
+.hero{
+padding:75px 7%;
+text-align:center;
+background:linear-gradient(135deg,#e3f4e5,#fffde8);
+}
+.hero-label{
+color:var(--green2);
+font-weight:bold;
+letter-spacing:4px;
+}
+.hero h1{
+font-size:46px;
+line-height:1.25;
+color:var(--green);
+margin:15px 0;
+}
+.slogan{
+font-size:23px;
+font-weight:bold;
+color:#b58d12;
+letter-spacing:1px;
+margin:18px 0;
+}
+.hero p{
+max-width:750px;
+margin:15px auto 25px;
+font-size:17px;
+}
+.btn{
+display:inline-block;
+padding:13px 25px;
+border-radius:30px;
+background:var(--green2);
+color:white;
+font-weight:bold;
+margin:6px;
+}
+.btn.yellow{background:var(--yellow);color:#263d2d}
+.btn.blue{background:#087bd5}
+section{padding:65px 7%}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{
+color:var(--green);
+font-size:30px;
+margin:0;
+}
+.heading p{color:#738078}
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+.about strong{color:var(--green)}
+.products{background:#f4faf5}
+.product-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:25px;
+max-width:1050px;
+margin:auto;
+}
+.product{
+background:white;
+border-radius:18px;
+overflow:hidden;
+text-align:center;
+padding:18px 18px 25px;
+box-shadow:0 5px 20px #0000000d;
+}
+.product img{
+width:100%;
+height:310px;
+object-fit:contain;
+background:#fff;
+border-radius:12px;
+}
+.product h3{color:var(--green)}
+.product p{color:#69776e}
+.benefits{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+text-align:center;
+}
+.benefit{
+background:var(--light);
+padding:25px;
+border-radius:16px;
+}
+.benefit h3{color:var(--green)}
+.agency{
+background:linear-gradient(130deg,#155b3c,#238451);
+color:white;
+text-align:center;
+}
+.agency h2{font-size:32px}
+.agency .btn{
+background:var(--yellow);
+color:#29422f;
+}
+.contact{background:#f3f9f4}
+.contact-card{
+max-width:780px;
+margin:auto;
+padding:30px;
+background:white;
+border-radius:18px;
+box-shadow:0 5px 20px #0000000c;
+}
+.contact-card h3{
+text-align:center;
+color:var(--green);
+font-size:26px;
+}
+.contact-card p{margin:12px 0}
+.contact-card strong{color:var(--green)}
+.contact-buttons{text-align:center;margin-top:25px}
+footer{
+background:#103d2a;
+color:white;
+text-align:center;
+padding:35px 7%;
+}
+footer h2{font-size:30px;letter-spacing:3px}
+footer .slogan{color:#f5d84d;font-size:18px}
+footer p{font-size:13px}
+.float-zalo{
+position:fixed;
+right:17px;
+bottom:20px;
+z-index:200;
+background:#087bd5;
+color:white;
+border-radius:30px;
+padding:13px 20px;
+font-weight:bold;
+box-shadow:0 3px 15px #0003;
+}
+@media(max-width:650px){
+header{justify-content:center}
+nav{justify-content:center;gap:12px}
+nav a{font-size:12px}
+.hero{padding:55px 5%}
+.hero h1{font-size:32px}
+.slogan{font-size:19px}
+section{padding:45px 5%}
+.product-grid{grid-template-columns:1fr}
+.product img{height:280px}
+.benefits{grid-template-columns:1fr}
+.contact-card{padding:20px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+CHAFOID
+<small>THƯƠNG HIỆU VIỆT NAM</small>
+</div>
+
+<nav>
+<a href="#home">Trang chủ</a>
+<a href="#about">Giới thiệu</a>
+<a href="#products">Sản phẩm</a>
+<a href="#agency">Đại lý</a>
+<a href="#contact">Liên hệ</a>
+</nav>
+</header>
+
+<!-- TRANG CHỦ -->
+<div class="hero" id="home">
+<div class="hero-label">CHAFOID VIỆT NAM</div>
+
+<h1>SẠCH THƠM MỖI NGÀY<br>HẠNH PHÚC MỌI NHÀ</h1>
+
+<div class="slogan">
+TRAO NIỀM TIN – HƯỚNG ĐẾN TƯƠNG LAI
+</div>
+
+<p>
+Thương hiệu CHAFOID của Công ty TNHH Sản xuất
+và Xuất nhập khẩu Nhật Phúc.
+Chúng tôi hướng tới những sản phẩm hàng tiêu dùng
+phục vụ nhu cầu chăm sóc gia đình.
+</p>
+
+<a class="btn" href="#products">KHÁM PHÁ SẢN PHẨM</a>
+<a class="btn yellow" href="https://zalo.me/0815009777">LIÊN HỆ ĐẶT HÀNG</a>
+</div>
+
+<!-- GIỚI THIỆU -->
+<section id="about">
+<div class="heading">
+<h2>GIỚI THIỆU DOANH NGHIỆP</h2>
+<p>CHAFOID – TRAO NIỀM TIN, HƯỚNG ĐẾN TƯƠNG LAI</p>
+</div>
+
+<div class="about">
+<p>
+<strong>CÔNG TY TNHH SẢN XUẤT VÀ XUẤT NHẬP KHẨU NHẬT PHÚC</strong>
+</p>
+
+<p>
+Hoạt động trong lĩnh vực sản xuất và kinh doanh hàng tiêu dùng,
+với thương hiệu CHAFOID.
+</p>
+
+<p>
+Các sản phẩm chủ lực gồm nước giặt xả và nước rửa bát chén
+hương chanh, phục vụ nhu cầu sinh hoạt của các gia đình.
+</p>
+
+<p>
+Với định hướng phát triển lâu dài, Nhật Phúc mong muốn
+xây dựng thương hiệu CHAFOID uy tín, mở rộng thị trường
+và hợp tác cùng các đại lý, nhà phân phối trên toàn quốc.
+</p>
+
+<div class="slogan">
+TRAO NIỀM TIN – HƯỚNG ĐẾN TƯƠNG LAI
+</div>
+</div>
+</section>
+
+<!-- SẢN PHẨM -->
+<section class="products" id="products">
+<div class="heading">
+<h2>SẢN PHẨM CHAFOID</h2>
+<p>Chất lượng và uy tín là nền tảng phát triển</p>
+</div>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="images/san-pham-1.png"
+alt="Nước giặt xả CHAFOID 3.8 lít">
+<h3>NƯỚC GIẶT XẢ CHAFOID</h3>
+<p>Dòng sản phẩm nước giặt xả can 3,8 lít.</p>
+<a class="btn" href="https://zalo.me/0815009777">ĐẶT HÀNG</a>
+</div>
+
+<div class="product">
+<img src="images/san-pham-2.png"
+alt="Nước giặt xả CHAFOID can 5 lít">
+<h3>NƯỚC GIẶT XẢ CHAFOID</h3>
+<p>Dòng sản phẩm nước giặt xả can 5 lít.</p>
+<a class="btn" href="https://zalo.me/0815009777">ĐẶT HÀNG</a>
+</div>
+
+<div class="product">
+<img src="images/san-pham-3.png"
+alt="Nước giặt xả CHAFOID mẫu sản phẩm">
+<h3>NƯỚC GIẶT XẢ CHAFOID</h3>
+<p>Nhiều lựa chọn sản phẩm phục vụ gia đình.</p>
+<a class="btn" href="https://zalo.me/0815009777">ĐẶT HÀNG</a>
+</div>
+
+<div class="product">
+<img src="images/san-pham-4.png"
+alt="Nước rửa bát chén CHAFOID hương chanh">
+<h3>NƯỚC RỬA BÁT CHÉN HƯƠNG CHANH</h3>
+<p>Sản phẩm nước rửa bát chén hương chanh.</p>
+<a class="btn" href="https://zalo.me/0815009777">ĐẶT HÀNG</a>
+</div>
+
+</div>
+</section>
+
+<!-- GIÁ TRỊ -->
+<section>
+<div class="heading">
+<h2>GIÁ TRỊ THƯƠNG HIỆU CHAFOID</h2>
+<p>TRAO NIỀM TIN – HƯỚNG ĐẾN TƯƠNG LAI</p>
+</div>
+
+<div class="benefits">
+<div class="benefit">
+<h3>THƯƠNG HIỆU</h3>
+<p>CHAFOID là nhãn hiệu đã được đăng ký theo thông tin doanh nghiệp cung cấp.</p>
+</div>
+
+<div class="benefit">
+<h3>SẢN PHẨM</h3>
+<p>Phát triển các dòng hàng tiêu dùng thiết yếu phục vụ gia đình.</p>
+</div>
+
+<div class="benefit">
+<h3>HỢP TÁC</h3>
+<p>Luôn chào đón các đối tác, cửa hàng và nhà phân phối.</p>
+</div>
+</div>
+</section>
+
+<!-- ĐẠI LÝ -->
+<section class="agency" id="agency">
+<h2>HỢP TÁC CÙNG CHAFOID</h2>
+
+<p>
+Cùng Công ty Nhật Phúc phát triển thương hiệu CHAFOID
+và mở rộng hệ thống phân phối trên toàn quốc.
+</p>
+
+<p>
+Chào đón các cửa hàng, đại lý và nhà phân phối
+quan tâm đến sản phẩm CHAFOID.
+</p>
+
+<a class="btn" href="https://zalo.me/0815009777">
+ĐĂNG KÝ LÀM ĐẠI LÝ
+</a>
+</section>
+
+<!-- LIÊN HỆ -->
+<section class="contact" id="contact">
+<div class="heading">
+<h2>THÔNG TIN LIÊN HỆ</h2>
+<p class="slogan">TRAO NIỀM TIN – HƯỚNG ĐẾN TƯƠNG LAI</p>
+</div>
+
+<div class="contact-card">
+
+<h3>CHAFOID VIỆT NAM</h3>
+
+<p>
+<strong>Tên công ty:</strong><br>
+CÔNG TY TNHH SẢN XUẤT VÀ XUẤT NHẬP KHẨU NHẬT PHÚC
+</p>
+
+<p>
+<strong>Địa chỉ:</strong><br>
+3/2 Ngách Vườn Quán – Trung Lập – Phượng Dực – Hà Nội
+</p>
+
+<p>
+<strong>Điện thoại / Hotline:</strong><br>
+<span style="font-size:25px;color:#16834f;font-weight:bold">
+0815 009 777
+</span>
+</p>
+
+<p>
+<strong>Zalo đặt hàng và hợp tác đại lý:</strong><br>
+0815 009 777
+</p>
+
+<div class="contact-buttons">
+<a class="btn" href="tel:0815009777">GỌI ĐIỆN NGAY</a>
+<a class="btn blue" href="https://zalo.me/0815009777">NHẮN TIN ZALO</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<h2>CHAFOID</h2>
+
+<div class="slogan">
+TRAO NIỀM TIN – HƯỚNG ĐẾN TƯƠNG LAI
+</div>
+
+<p>CÔNG TY TNHH SẢN XUẤT VÀ XUẤT NHẬP KHẨU NHẬT PHÚC</p>
+
+<p>Hotline: 0815009777</p>
+
+<p>© 2026 CHAFOID VIỆT NAM</p>
+</footer>
+
+<a class="float-zalo" href="https://zalo.me/0815009777">
+CHAT ZALO
+</a>
+
+</body>
+</html>
